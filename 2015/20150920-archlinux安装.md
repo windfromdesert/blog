@@ -73,3 +73,11 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
             Shift <KeyPress> Insert:insert-selection(CLIPBOARD, CUT_BUFFER1) \n\ 
             ~Shift~Ctrl<Btn2Up>: insert-selection(CLIPBOARD, CUT_BUFFER1) \n\ 
             ~Shift<BtnUp>: select-end(CLIPBOARD, CUT_BUFFER1) 
+
+### 调节 xterm 行距
+
++   修改 ~/.Xresources 文件，添加以下代码：
+
+        XTerm*scaleHeight: 1.2
+
++   行距的大小只要调整后面的数字即可。取值从0.9-1.5

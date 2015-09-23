@@ -127,6 +127,10 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
             export ftp_proxy=$http_proxy
             export rsync_proxy=$http_proxy
 
+    -   在终端中输入以下命令，使 .bashrc 设置立即生效。
+
+            source ~/.bashrc
+
     -   不要使用全局代理时，将上述 .bashrc 中的几行代码用 # 注释掉即可。
     -   同时停用 cow 代理服务
 

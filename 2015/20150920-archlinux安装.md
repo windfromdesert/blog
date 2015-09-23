@@ -81,3 +81,62 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
         XTerm*scaleHeight: 1.2
 
 +   行距的大小只要调整后面的数字即可。取值从0.9-1.5
+
+### 设置代理
+
++   安装 [shadowsocks] [1]
+
+    直接在 arch 库中安装 shadowsocks 即可。
+
++   设置 /etc/shadowsocks/config.json 
+
+        {
+	        "server":"remote-shadowsocks-server-ip-addr",
+	        "server_port":443,
+        	"local_address":"127.0.0.1",
+	        "local_port":1080,
+	        "password":"your-passwd",
+	        "timeout":300,
+	        "method":"aes-256-cfb",
+	        "fast_open":false,
+	        "workers":1
+        }
+
++   以守护进程形式运行客户端
++   Shadowsocks的systemd服务可在/etc/shadowsocks/里调用不同的conf-file.json（以conf-file为区分标志），例： 在/etc/shadowsocks/中创建了foo.json配置文件，那么执行以下语句就可以调用该配置：
+
+        # systemctl start shadowsocks@foo
+
++   若需开机自启动，则：
+
+        # systemctl enable shadowsocks@foo
+
++   提示: 可用journalctl -u shadowsocks@foo来查询日志；
+
++   使用 cow 将 shadowsocks sock5 代理转为 http 代理，让 xterm shell 可以使用代理更新某新被封的源。
+    -   从 AUR 中安装 [cow] [2]
+    -   按软件说明设置 cow 配置文件
+    -   启动 cow proxy
+        
+            sudo systemctl start cow@user
+
+    -   在 ~/.bashrc 中加入以下几行：(假设我将代理端口设置为8888)
+
+            export http_proxy=http://127.0.0.1:8888/
+            export https_proxy=$http_proxy
+            export ftp_proxy=$http_proxy
+            export rsync_proxy=$http_proxy
+
+    -   不要使用全局代理时，将上述 .bashrc 中的几行代码用 # 注释掉即可。
+    -   同时停用 cow 代理服务
+
+            sudo systemctl stop cow@user
+
+### chromium 因未安装插件而无法播放视频问题
+
++   只须安装插件 [chromium-pepper-flash] [3] 即可。
+
+
+[1]:    https://wiki.archlinux.org/index.php/Shadowsocks_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)     "shadowsocks_(简体中文)"
+[2]:    https://aur.archlinux.org/packages/cow-proxy/       "cow-proxy"
+[3]:    https://aur.archlinux.org/packages/chromium-pepper-flash/   "chromium-pepper-flash/"

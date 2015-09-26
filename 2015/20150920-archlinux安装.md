@@ -140,6 +140,17 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
 
 +   只须安装插件 [chromium-pepper-flash] [3] 即可。
 
+### 连接 android 移动设备
+
++   直接从 arch 库中安装 android-tools, android-udev
++   将自己的用户名加入到 adbusers 组中
+
+        gpasswd -a username adbusers
+
++   将移动设备的 USB 调试选项打开
++   连接移动设备与PC电脑，在手机端可能会需要认证一下。点一下 OK 即可。
++   然后就可以使用 adb shell, adb push, adb pull 来操作了。
+
 
 [1]:    https://wiki.archlinux.org/index.php/Shadowsocks_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)     "shadowsocks_(简体中文)"
 [2]:    https://aur.archlinux.org/packages/cow-proxy/       "cow-proxy"

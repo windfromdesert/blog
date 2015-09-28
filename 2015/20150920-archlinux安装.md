@@ -37,6 +37,8 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
     export QT_IM_MODULE=fcitx
     export XMODIFIERS="@im=fcitx"
 
++   fcitx 有一个很酷的功能。就是快捷键 ctrl + ; 可以在不同的程序间进行复制与粘贴。有时候这是一个非常有用的特性。
+
 ### fluxbox 状态栏的时间显示格式
 
 右键点击桌面，fluxbox menu --> configure --> 工具栏 --> 编辑时间显示格式
@@ -150,6 +152,18 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
 +   将移动设备的 USB 调试选项打开
 +   连接移动设备与PC电脑，在手机端可能会需要认证一下。点一下 OK 即可。
 +   然后就可以使用 adb shell, adb push, adb pull 来操作了。
+
+### 安装屏幕截图程序 scrot
+
++   直接从 arch 库中安装
+
+        sudo pacman -S scrot
+
++   scrot 一般用法
+
+        scrot desktop.png // 抓取整个桌面
+        scrot -bs window.png // 选项 b 使抓取窗口时将外边框抓取下来，选项 s 让用户选择抓取哪个窗口
+        scrot -s test1.png // 执行此命令后，使用鼠标拖曳的矩形区域进行抓取。
 
 
 [1]:    https://wiki.archlinux.org/index.php/Shadowsocks_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)     "shadowsocks_(简体中文)"

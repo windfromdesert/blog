@@ -165,7 +165,20 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
         scrot -bs window.png // 选项 b 使抓取窗口时将外边框抓取下来，选项 s 让用户选择抓取哪个窗口
         scrot -s test1.png // 执行此命令后，使用鼠标拖曳的矩形区域进行抓取。
 
+### PDF 阅读器的选择与安装
+
++   我选择的是 zathura 阅读器
+    -   在 archlinux 库中的地址在 [这里] [4]
+    -   按照页面上的说明，我选择了最小安装（只用来阅读PDF文件）
+        
+            sudo pacman -S zathura zathura-pdf-poppler 
+
+    -   安装完后，可以在命令行直接键入 zathura 启动阅读器
+    -   使用方法与 vim 类似，可以用冒号后加命令的形式
+    -   配置文件在 ~/.config/zathura/zathurarc 中设置， [我的配置文件] [5]
 
 [1]:    https://wiki.archlinux.org/index.php/Shadowsocks_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)     "shadowsocks_(简体中文)"
 [2]:    https://aur.archlinux.org/packages/cow-proxy/       "cow-proxy"
 [3]:    https://aur.archlinux.org/packages/chromium-pepper-flash/   "chromium-pepper-flash/"
+[4]:    https://www.archlinux.org/packages/community/i686/zathura/ "zathura"
+[5]:    https://github.com/windfromdesert/code/blob/master/zathurarc "zathurarc"

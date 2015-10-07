@@ -1,5 +1,47 @@
 Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的系统实现。
 
+### 字体安装
+
++   复制字体文件夹到 /usr/share/fonts/ 目录下
++   接着在命令行下输入以下命令（比如，这里创建了一个TTC字体文件夹）
+
+        #cd /usr/share/fonts/TTC
+　　    #mkfontscale
+　　    #mkfontdir       
+
++   更新字体缓存： fc-cache -fv
+
+### fluxbox 中文字体设置
+
++   在转换主题样式 style 的过程中，会发现有时候 标题栏或者工具栏的中文显示为方框，那是因为 fluxbox 中的字体设置问题。
++   一次性解决的办法是编辑 ~/.fluxbox/overlay 文件。
+
+        # 菜单标题的字体
+        menu.title.font: simsun-10
+        # 菜单组标题的对齐方式
+        menu.title.justify: center
+        # 菜单项目的字体
+        menu.frame.font: simsun-10
+        # 菜单项目的对齐方式
+        menu.frame.justify: left
+        # 窗口标题栏文字的字体
+        window.font: simsun-10
+        # 窗口标题栏文字的对齐方式
+        window.justify: center
+        # 窗口标题聚焦时的背景颜色|5/5/f
+        window.label.focus.color: rgb:4e/8f/cf
+        window.label.focus.colorto: rgb:4e/8f/cf
+        # 时钟的字体
+        toolbar.clock.font: simsun-10
+        # 工作区名称的字体
+        #toolbar.workspace.font: simsun
+        # 图标栏的字体
+        toolbar.iconbar.focused.font: simsun-10
+        toolbar.iconbar.unfocused.font: simsun-10
+
++   把其中的字体改成自己系统中的已安装中文字体，查看系统字体命令： fc-list
++   字体名称后面-11为字体大小，再后面跟:bold表示粗体显示，中间都没有空格。
+
 ### fluxbox 壁纸的实现
 
 +   安装 feh （可以从arch库直接安装）

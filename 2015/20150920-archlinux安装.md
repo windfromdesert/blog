@@ -6,8 +6,8 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
 +   接着在命令行下输入以下命令（比如，这里创建了一个TTC字体文件夹）
 
         #cd /usr/share/fonts/TTC
-　　    #mkfontscale
-　　    #mkfontdir       
+        #mkfontscale
+        #mkfontdir       
 
 +   更新字体缓存： fc-cache -fv
 
@@ -213,7 +213,7 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
     -   在 archlinux 库中的地址在 [这里] [4]
     -   按照页面上的说明，我选择了最小安装（只用来阅读PDF文件）
         
-            sudo pacman -S zathura zathura-pdf-poppler 
+            sudo pacman -S zathura zathura-pdf-poppler poppler-data 
 
     -   安装完后，可以在命令行直接键入 zathura 启动阅读器
     -   使用方法与 vim 类似，可以用冒号后加命令的形式

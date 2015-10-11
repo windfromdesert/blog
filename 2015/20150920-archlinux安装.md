@@ -219,8 +219,37 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
     -   使用方法与 vim 类似，可以用冒号后加命令的形式
     -   配置文件在 ~/.config/zathura/zathurarc 中设置， [我的配置文件] [5]
 
+### 显示器校色软件 dispcalGUI 的安装与使用
+
++   可以直接在库中安装：sudo pacman -S dispcalgui argyllcms gksu
++   然后启动: sudo dispcalGUI
++   启动后需激活硬件 spyder2，需用到CD光盘或者 [Spyder2express_2.3.6_Setup.exe] [6]
++   调整时要关闭显示器屏幕保护，Xorg 的 DPMS (Display Power Management Signaling) 设置文件是：/etc/X11/xorg.conf.d/10-monitor.conf，内容象这样：
+
+        Section "Monitor"
+            Identifier "LVDS0"
+            Option "DPMS" "false"
+        EndSection
+
+        Section "ServerLayout"
+            Identifier "ServerLayout0"
+            Option "StandbyTime" "0"
+            Option "SuspendTime" "0"
+            Option "OffTime" "0"
+        EndSection
+        
++   Note: If the "OffTime" option does not work replace it with the following, (change the "blanktime" to "0" to disable screen blanking)
++   当最终生成 icc 文件后，我选择不自动安装 icc 配置文件
++   因为我用的窗口管理器是 fluxbox，所以可以编辑文件： ~/.fluxbox/startup，增加以下代码
++   或者在 Xinitrc 中添加以下代码，Xinitrc 文件样本可以复制到用户目录中：cp /etc/X11/xinit/xinitrc ~/.xinitrc
+
+        /usr/bin/dispwin -d0 /home/wangbin/iccprofile/AOC-ARCH-20151010.icc
+
+
+
 [1]:    https://wiki.archlinux.org/index.php/Shadowsocks_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)     "shadowsocks_(简体中文)"
 [2]:    https://aur.archlinux.org/packages/cow-proxy/       "cow-proxy"
 [3]:    https://aur.archlinux.org/packages/chromium-pepper-flash/   "chromium-pepper-flash/"
 [4]:    https://www.archlinux.org/packages/community/i686/zathura/ "zathura"
 [5]:    https://github.com/windfromdesert/code/blob/master/zathurarc "zathurarc"
+[6]:    http://pan.baidu.com/s/1pJ9YBX5 "spyder2express_2.3.6_setup.exe"

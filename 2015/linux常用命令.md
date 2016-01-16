@@ -1,7 +1,7 @@
 ### Linux 常用命令
 
 +   df -h // 磁盘的使用情况
-+   wifi-menu // 笔记本自动连接 WIFI
++   sudo wifi-menu // 笔记本自动连接 WIFI
 +   sudo dhcpcd // 有线宽带自动连接
 +   chmod [-cfvR] [--help] [--version] mode file 
 
@@ -23,3 +23,7 @@
         chmod ［who］ ［+ | - | =］ ［mode］ 文件名
         2）. 数字设定法
         我们必须首先了解用数字表示的属性的含义：0表示没有权限，1表示可执行权限，2表示可写权限，4表示可读权限，然后将其相加。所以数字属性的格式应为3个从0到7的八进制数，其顺序是（u）（g）（o）。
+
++   $ ps -ef | grep firefox // 查找进程 firefox
++   $kill -s 9 1827 // 终止（杀）进程 
++   $killall -9 firefox // 终止所有 firefox 进程

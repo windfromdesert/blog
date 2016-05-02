@@ -247,6 +247,11 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
 
         /usr/bin/dispwin -d0 /home/wangbin/iccprofile/AOC-ARCH-20151010.icc
 
+### 图片浏览软件Geeqie
+
++   直接安装即可，也可以一起安装 ufraw 用来识别读取数码相机的 raw 文件
+
+        $ sudo pacman -S geeqie
 
 
 [1]:    https://wiki.archlinux.org/index.php/Shadowsocks_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)     "shadowsocks_(简体中文)"

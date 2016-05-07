@@ -247,7 +247,20 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
 
         /usr/bin/dispwin -d0 /home/wangbin/iccprofile/AOC-ARCH-20151010.icc
 
+### 图片浏览软件Geeqie
 
++   直接安装即可，也可以一起安装 ufraw 用来识别读取数码相机的 raw 文件
+
+        $ sudo pacman -S geeqie
+
+### 写作软件 focuswriter
+
++   需要安装 AUR 源中的 focuswriter 即可。
++   第一步先下载 snapshot，然后检查一下页面中的依赖，可能需要先安装一些依赖，这一步需要自行安装，或者使用 yaourt 直接安装 AUR 软件也可。
++   第二步解压 $ tar xvzf focuswriter.tar.gz
++   第三步进入解压后的目录
++   第四步编译程序，这一步需要花费一些时间。 $ makepkg -s
++   第五步，如果上一步成功则会在目录中生成一个 pkg.tar.xz 格式的文件。使用以下命令直接安装它即可。$ sudo pacman -U xxx.pkg.tar.xz 
 
 [1]:    https://wiki.archlinux.org/index.php/Shadowsocks_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)     "shadowsocks_(简体中文)"
 [2]:    https://aur.archlinux.org/packages/cow-proxy/       "cow-proxy"

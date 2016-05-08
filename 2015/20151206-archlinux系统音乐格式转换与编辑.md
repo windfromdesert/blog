@@ -11,6 +11,7 @@
 
     sudo pacman -S flac //这一步为安装 flac 编解码器
     flac -o [输出文件名.wav] -d [输入文件名.flac] //这一步是将 flac 音乐转换为 wav格式
+    flac -8 -o 输出档案路径 输入档案路径 // 将wav格式压缩为flac，-8 是压缩等级，数字从0-8，数字越大压得越小
     sudo pacman -S mac //这一步是安装 ape 格式的编解码器
     mac [ape输入文件] [WAV输出文件] -d //这一步将APE文件转换为WAV格式
     sudo pacman -S lame //这一步为安装 mp3 lame 编解码器

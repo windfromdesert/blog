@@ -10,4 +10,4 @@
 
         > sudo rmmod iwlmvm iwlwifi && sudo modprobe iwlmvm iwlwifi
 
-[1]: https://forum.manjaro.org/t/problems-getting-network-address-via-wireless/5007/2 <Problems getting network address via wireless>
+[1]: https://forum.manjaro.org/t/problems-getting-network-address-via-wireless/5007/2 "Problems getting network address via wireless"

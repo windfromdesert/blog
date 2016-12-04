@@ -28,6 +28,17 @@
             Option "OffTime"     "0"    // 在这里设置关闭屏幕时间
             Option "BlankTime"   "0"    // 在这里设置屏幕保护时间
         EndSection        
+        
++   配置系统快捷键，给截屏工具 scrot 设置全屏快捷键。
+
+    fluxbox 桌面管理器的快捷键设置文件在：`$ cd ~/.fluxbox/keys`
+
+    在 keys 文件尾部添加以下文字：
+
+        Control Mod1 f :exec scrot desktop.jpg -e 'mv $f ~/'
+
+    以上这行命令的意思是设置快捷键 Control 即 <ctrl> 与 Mod1 即 <Alt> 与 f 组合键，即 <Ctrl>+<Alt>+f 。执行命令为：exec scrot desktop.jpg -e 'mv $f ~/'。其中 exec 代表执行命令，scrot desktop.jpg 代表将截屏保存为 desktop.jpg 文件，-e 'mv $f ~/' 代表将 desktop.jpg 保存在 ~/ 目录中，其中 mv 是移动文件，$f 指代 desktop.jpg 文件。
+
 
 [1]: https://forum.manjaro.org/t/problems-getting-network-address-via-wireless/5007/2 "Problems getting network address via wireless"
 [2]: https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling "Display Power Management Signaling"

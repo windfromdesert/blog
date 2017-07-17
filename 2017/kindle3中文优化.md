@@ -26,7 +26,7 @@
 
 #### 越狱
 
-这个不用说了吧，是装软件的前提。从上文那个 MobileRead [链接][1] 中下载 update-jailbreak-*.zip，并解压出对应你的机器的版本的update_jailbreak_*_install.bin 文件，放到 Kindle 的根目录中，然后在 Kindle 的 Settings 页面中，按 Menu，选择 Update your Kindle，等待两分钟左右，即可完成越狱，并且由于已经重启了，上一步的 Locale 也就生效了。这时 Kindle 的根目录中应该已经多出了linkjail 这个目录了。在 Kindle 的内部文件系统中，相应的目录已经被换成了符号链接，目标就是这个 linkjail，我们可以通过修改linkjail 中的文件来达到修改 Kindle 内部文件系统文件的目的。
+这个不用说了吧，是装软件的前提。从上文那个 MobileRead [链接](http://www.mobileread.com/forums/showthread.php?t=88004 “MobileRead”) 中下载 update-jailbreak-*.zip，并解压出对应你的机器的版本的update_jailbreak_*_install.bin 文件，放到 Kindle 的根目录中，然后在 Kindle 的 Settings 页面中，按 Menu，选择 Update your Kindle，等待两分钟左右，即可完成越狱，并且由于已经重启了，上一步的 Locale 也就生效了。这时 Kindle 的根目录中应该已经多出了linkjail 这个目录了。在 Kindle 的内部文件系统中，相应的目录已经被换成了符号链接，目标就是这个 linkjail，我们可以通过修改linkjail 中的文件来达到修改 Kindle 内部文件系统文件的目的。
 
 #### 安装 Fonts Hack
 
@@ -77,7 +77,7 @@
 	hans.1=CJK.ttf
 	hans.bold=CJK.ttf
 
-可以看出，最上面一段是对符号字体（这是最后一个 Fallback，关于 Fallback 的顺序，请参见 [这个帖子][2] ）进行设置，不用修改，后面四段内容分别对日文、谚文、正体中文和简体中文进行了设置，格式如下：
+可以看出，最上面一段是对符号字体（这是最后一个 Fallback，关于 Fallback 的顺序，请参见 [这个帖子](http://www.mobileread.com/forums/showpost.php?p=977006&postcount=97 “Fallback顺序”) 进行设置，不用修改，后面四段内容分别对日文、谚文、正体中文和简体中文进行了设置，格式如下：
 
 [字符集].[样式]=[字体文件名]
 
@@ -158,6 +158,3 @@ Caecilia_LT_66_Medium_Italic.ttf → Serif_Italic.ttf
 Caecilia_LT_65_Medium.ttf → Serif_Regular.ttf
 
 按照这样的对应关系把它们复制、替换掉 linkfonts/fonts 里的字体，然后再用上一节“重启 Kindle 的 Framework”中的方法，即可应用新字体。
-
-[1]: http://www.mobileread.com/forums/showthread.php?t=88004 “MobileRead”
-[2]: http://www.mobileread.com/forums/showpost.php?p=977006&postcount=97 “Fallback顺序”

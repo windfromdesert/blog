@@ -158,3 +158,204 @@ Caecilia_LT_66_Medium_Italic.ttf → Serif_Italic.ttf
 Caecilia_LT_65_Medium.ttf → Serif_Regular.ttf
 
 按照这样的对应关系把它们复制、替换掉 linkfonts/fonts 里的字体，然后再用上一节“重启 Kindle 的 Framework”中的方法，即可应用新字体。
+
+#### mobi格式和 azw3 格式
+
+来源：https://www.douban.com/note/598323267/
+
+(1) mobi格式
+
+早期的Kindle 只支持 mobi 或 prc 格式文件。Kindle 固件 3.x.x 和 4.x.x 时代它们是Kindle专用的电子书格式。那时Kindle对字体的支持是通过字体的文件名实现的。要编辑的文件是 font.properties. 最关键的参数改动是每一种语言的字体文件名：
+
+    中文繁体
+    hant.0=tCJK-regular.ttf
+    hant.plain=tCJK-bold.ttf
+    hant.1=tCJK-regular.ttf
+    hant.bold=tCJK-bold.ttf
+
+    中文简体
+    hans.0=sCJK-regular.ttf
+    hans.plain=sCJK-bold.ttf
+    hans.1=sCJK-regular.ttf
+    hans.bold=sCJK-bold.ttf
+
+这时对于mobi 文件中文显示来说，Kindle只支持一种字体（font family: regular, bold, etc.)。而英文则可以在三种显示之间互换【serif, condensed, sans serif】，每一个模式对应一种英文字体。如果有中英双语的书，你会看到在不同模式转换时英文字体变化而中文字体不变。
+
+(2) azw3 格式
+
+后来，Amazon 开始使用新的 azw3 格式， 同时也对字体调用进行了改进。 这个改进就是用 Unix/Linix 的 [fontconfig](https://www.freedesktop.org/software/fontconfig/fontconfig-user.html) 来调用字体。并且对早期的固件 3.x.x 和4.x.x 版本更新增加 azw3 格式的支持。这样在早期的Kindle Keyboard 与 Kindle 4 里就有2套字体配置文件， 分别管 mobi 和 azw3 文件。新增加的azw3字体配置文件在 /etc/fonts/conf.d. 我们需要知道的有2个文件：
+
+local.conf
+9xuser.conf
+
+在Kindle 3/4 最新固件里，我们需要改动以上2个文件才能达到为azw3 文件替换字体的目的。而在固件版本5.x.x 的时候，越狱安装 font hack 以后就只要改动一个文件了（9x-user.conf)。
+
+在Kindle 4 的字体配置文件local.conf, 你会看到字族调用次序（与书籍的语言设置无关）：列在前面的字体优先调用。以下例子是选择【condensed】时的字体调用次序例子。
+
+    <alias>
+	 <family>condensed</family>
+	 <prefer> 
+            <family>condensed</family>  #英文字体
+            <family>Kindle Symbol</family> #小图标字体
+            <family>FZQingKeBenYueSongS-R-GB</family> #用户添加简体中文字体
+            <family>HeiseiMaruGoth_JIS0213_E</family> #系统日文字体
+            <family>HangulGothicMTC-Medium_E</family> #系统韩文字体
+            <family>MHeiGB18030C-Medium_E</family> #系统简体中文字体
+            <family>MHeiC-Medium-Big5HKSCS_E</family> #系统繁体中文字体
+            <family>Code2000</family> #备用英文字体，字符较全，有中日韩字体
+	 </prefer>
+    </alias>
+
+另外在user.conf 里， 还有根据语言定义的字体调用（可见在固件更新以后，Kindle 3/4 azw3 文件也可以显示三种中文字体）（设置语言的书籍才有效），分别对应于【serif】，【condensed】，【sans serif】三种字体界面选择模式。
+
+    <match>
+	    <test compare="contains" name="lang">
+		    <string>zh</string>
+	    </test>
+	    <test name="family">
+		    <string>serif</string>
+	    </test>
+	    <edit name="family" mode="prepend">
+		    <string>FZYaSong-R-GBK</string>
+	    </edit>
+    </match>
+
+    <match>
+	    <test compare="contains" name="lang">
+		    <string>zh</string>
+	    </test>
+	    <test name="family">
+		    <string>condensed</string>
+	    </test>
+	    <edit name="family" mode="prepend" binding="strong">
+		    <string>FZQingKeBenYueSongS-R-GB</string>
+	    </edit>
+    </match>
+
+    <match>
+		<test compare="contains" name="lang">
+		    <string>zh</string>
+	    </test>
+	    <test name="family">
+		    <string>sans-serif</string>
+	    </test>
+	    <edit name="family" mode="prepend">
+		<string>FZYaSong-GBK</string>  
+	    </edit>
+    </match>
+
+#### 中文字族的组合
+
+我们找到一款喜爱的字体，想要在 Kindle 上使用的时候，往往没有字体名相同配套的粗体。而Kindle 用的 fontconfig 是用字族名（font family name, 而不是文件名）来调用字体的。要实现常规体和粗体，我们必须有字体字族名相同的一套字体才行。网传的方法是用字体编辑软件改变字体属性来实现粗体。 这个方法有两个缺点：（1）需要使用字体编辑软件， 不易普及。（2）违反字体使用授权条例。
+
+如果要把任意两款字体合成一个配套字族（bold，regular），可以利用字体文件名重新定义字体属性。用字体文件名自定义字族名无需知道原来字体的真实名称。这个方法只需要更改字体设置文件，不需要更改字体。这与过去Kindle Keyboard 时期用 font.properties 配置组合字体类似。
+
+下面的例子是将方正粗金陵（bold）与方正细金陵（regular）在配置文件合成为自定义的FZJinLingSGB 字族。字体的路径是/mnt/us/linkfonts/fonts。FZCuJinLingSGB.ttf 与 FZXiJinLingSGB.ttf 分别为字体文件名。自定义字族名还可以用字族名全称（见后面的例子）。
+
+    <!– Define bold font using file name for FZJinLingSGB –>
+
+    <match target="scan">
+        <test name="file" compare="eq">
+              <string>/mnt/us/linkfonts/fonts/FZCuJinLingSGB.ttf</string>
+        </test>
+        <edit name="family" mode="assign">
+             <string>FZJinLingSGB</string>
+        </edit>
+        <edit name="style" mode="assign">
+              <string>Bold</string>
+        </edit>
+    </match>
+
+    <!– Define regular font using file name for FZJinLingSGB –>
+
+    <match target="scan">
+        <test name="file" compare="eq">
+             <string>/mnt/us/linkfonts/fonts/FZXiJinLingSGB.ttf</string>
+        </test>
+        <edit name="family" mode="assign">
+             <string>FZJinLingSGB</string>
+        </edit>
+        <edit name="style" mode="assign">
+             <string>Medium</string>
+        </edit>
+    </match>
+
+#### 相对完美的中文字体替换方案
+
+以上讨论的字体替换方法， 都有一些小问题。比如：
+
+1. 替换中文字体，改变了英文字体
+2. 复原英文字体后，用户界面英文字体从sans serif 变成了 serif
+3. 屏保界面的 Swipe to Unlock Kindle 变成了 Swipe to Unlo ck Kindle
+
+经过本人研究测试， 发现替换字体的原始解决方案用力过猛，把 binding 一律设置为 “strong”。本人的改进办法是把 binding 设置为 “same”： binding="same"。这样，替换中文字体后不会影响英文字体和用户界面。设置文件如下：
+
+    <?xml version="1.0"?>
+    <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+    <fontconfig>
+    <!-- Define bold font for FZYasong-R-GBK using FZYaSong-B-GBK -->
+    <match target="scan">
+    	<test name="fullname" compare="eq">
+    		<string>FZYaSong-B-GBK Regular</string>  
+    	</test>
+    	<edit name="family" mode="assign">
+    		<string>FZYaSong-R-GBK</string>
+    	</edit>
+    	<edit name="style" mode="assign">
+    		<string>Bold</string>
+    	</edit>
+    </match>
+    	
+    <!-- Now Chinese 宋体 font replacement -->
+    <match target="pattern">
+    	<test name="family" compare="eq">
+    		<string>STSong</string>
+    	</test>
+    	<edit name="family" mode="prepend" binding="same">
+    		<string>FZYaSong-R-GBK</string>
+    	</edit>
+    </match>
+    	
+    <!-- Define bold font using font file name -->
+    	
+    <match target="scan">
+    	<test name="file" compare="eq">
+    		<string>/mnt/us/linkfonts/fonts/FZYaHei.ttf</string>  
+    	</test>
+    	<edit name="family" mode="assign">
+    		<string>FZJinLS-B-GB</string>
+    	</edit>
+    	<edit name="style" mode="assign">
+    		<string>Bold</string>
+    	</edit>
+    </match>
+    	
+    <match target="pattern">
+    	<test name="family" compare="eq">
+    		<string>STKai</string>
+    	</test>
+    	<edit name="family" mode="prepend" binding="same">
+    		<string>FZJinLS-B-GB</string> 
+    	</edit>
+    </match>
+    	
+    <match target="pattern">
+    	<test name="family" compare="eq">
+    		<string>STYuan</string>
+    	</test>
+    	<edit name="family" mode="prepend" binding="same">
+    		<string>FZYaSong-GBK</string> 
+    	</edit>
+    </match>
+    	
+    <match target="pattern">
+    	<test name="family" compare="eq">
+    		<string>Song T</string>
+    	</test>
+    	<edit name="family" mode="prepend" binding="same">
+    		<string>TW-Sung</string>
+    	</edit>
+    </match>
+    </fontconfig>
+
+【注意事项】fongconfig 的匹配方式比较复杂，不同的匹配方式哪个优先往往较难预测。需要测试才可确定。

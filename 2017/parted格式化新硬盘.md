@@ -58,3 +58,13 @@ print：打印输出硬盘分区信息
 
     (parted) mkpart primary 0% 100%
     (parted) mkpart primary 128s 100%
+
+格式化磁盘为NTFS格式
+
+    mkfs.ntfs -Q /dev/sdb1
+
+注意上面命令中的 -Q 是指快速格式化，否则速度会非常非常慢。
+
+ntfs 特性需要首先安装 ntfs-3g 
+
+    # pacman -S ntfs-3g

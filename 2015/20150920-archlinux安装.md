@@ -72,6 +72,10 @@ Archlinux 系统基本安装见上一篇，这里主要记录一些增强型的�
 
 系统 UTC 时间的调整：有时候使用 timedatectl 查看会发现 UTC 时间不对，UTC 时间快了8个小时，所以北京时区就也跟着快了8小时。解决办法是编辑文件 `/etc/adjtime` ，将第三行修改一下，比如如果是 UTC ，表示系统按目前的UTC时间作为基准，如果改为 LOCAL ，则表示将目前的UTC时间作为LOCAL时间的基准。
 
+*20171118-update*
+
+因为我们是+8时区的，如果timedatectl设置时间那BIOS里时间就会快8小时。我后面发现只要#nano /etc/localtime 然后把最后一个CST-8改成CST-0就妥妥的了。
+
 ### 安装中文输入法 fcitx.
 
 可以在 arch 库中直接安装： fcitx fcitx-im fcitx-qt5 fcitx-table-extra fcitx-table-other

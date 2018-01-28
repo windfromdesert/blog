@@ -11,4 +11,4 @@ mutt是linux下的一个email程序。Mutt 显然是一个 Unix 的邮件程序�
 mutt 的配置文件在 `~/.mutt/` 目录，有三个文件： muttrc 是主配置文件，mutt.alias 是邮箱地址簿文件，mailcap 是设置哪些附件可以通过插件或直接浏览的。我的配置文件模板在 [这里][1] 有个示例。
 
 
-[1] https://github.com/windfromdesert/code/tree/master/mutt "我的 mutt 配置文件"
+[1]: https://github.com/windfromdesert/code/tree/master/mutt "我的 mutt 配置文件"

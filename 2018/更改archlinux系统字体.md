@@ -31,5 +31,7 @@
     </fontconfig>
 
 当然前提是这些字体你都安装OK的。
+
 修改完后，刷新下字体缓存： fc-cache -vf
+
 取看看现在的默认字体吧 ： fc-match

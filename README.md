@@ -8,7 +8,7 @@
 - [黑苹果无法登录 App Store 的解决办法][4]
 - [黑苹果10.14 Mojave升级注意事项][5]
 
-这里放我的生活札记，按年份归档。 
+这里放我的生活札记，按年份归档。  
 曾用过很多博客程序，可最后还是回归到这样简单的状态。
 
 [1]:	https://github.com/windfromdesert/blog/blob/master/2019/rime-%E4%B8%AD%E5%B7%9E%E9%9F%B5%E8%BE%93%E5%85%A5%E6%B3%95.md

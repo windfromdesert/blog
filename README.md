@@ -2,6 +2,7 @@
 
 最后更新：
 
+- [DELL 笔记本重新安装 archlinux+gnome 记录][6]
 - [龙寺生态园游记][4]
 - [Mac安装Homebrew与解决update慢的方法][5]
 - [rime-中州韵输入法][1]
@@ -16,3 +17,4 @@
 [3]:	https://github.com/windfromdesert/blog/blob/master/2019/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%AE%89%E8%A3%85%E5%A4%87%E5%BF%98%E5%BD%95.md "黑苹果安装备忘录"
 [4]:	https://github.com/windfromdesert/blog/blob/master/2019/%E9%BE%99%E5%AF%BA%E7%94%9F%E6%80%81%E5%9B%AD%E6%B8%B8%E8%AE%B0.md
 [5]:	https://github.com/windfromdesert/blog/blob/master/2019/Mac安装Homebrew与解决update慢的方法.md
+[6]:	https://github.com/windfromdesert/blog/blob/master/2020/arch%2Bgnome%2Binstall.md

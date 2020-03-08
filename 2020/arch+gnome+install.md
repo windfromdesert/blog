@@ -46,5 +46,5 @@ Xorg：首先是装Xorg
 
 2020年3月8日
 
-[1]:	https://github.com/windfromdesert/blog/blob/master/2017/archlinux%E5%AE%89%E8%A3%85.md “archlinux安装”
+[1]:	https://github.com/windfromdesert/blog/blob/master/2017/archlinux%E5%AE%89%E8%A3%85.md
  

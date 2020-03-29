@@ -2,18 +2,18 @@
 
 + 安装 debtap （在AUR库中）
 
-	yaourt -S debtap
+	    yaourt -S debtap
 
-	也应该安装bash， binutils ，pkgfile 和 fakeroot 依赖包。
+	    也应该安装bash， binutils ，pkgfile 和 fakeroot 依赖包。
 
 + 创建/更新 pkgfile 和 debtap 数据库。
 
-	sudo debtap -u
+	    sudo debtap -u
 
 + 转换deb包
 
-	debtap ***.deb
+	    debtap ***.deb
 
 + 安装
 
-	sudo pacman -U <package-name>
+	    sudo pacman -U <package-name>

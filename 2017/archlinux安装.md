@@ -16,7 +16,7 @@ Archlinux 能在任何内存空间不小于256MB的I686兼容机上运行，最�
         +   使用 netctl 的 wifi-menu 连接到无线网络。注：自从2020年6月之后 wifi-menu 就不可用了
             -   如果有多个无线设备，使用 `# iw dev` 可以确定无线网络接口名。[一般以"w"开头]
             -   然后使用 netctl 的 wifi-menu 来连接网络：例如：`# wifi-menu wlp3s0`
-	+   使用 iwctl 连接到无线网络
+        +   使用 iwctl 连接到无线网络
             -   `[root@archiso~] iwctl` 进入[iwd#]
 	    -   `[iwd#]device list` 查询机器的网卡设备。
 	    -   `[iwd#]station <devicename> scan` 查询附近可用的wifi网络

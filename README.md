@@ -16,7 +16,9 @@
 
 这里是我的随笔札记，按年份归档。
 
-参考：[Markdown 语法][11]  
+参考：[Markdown 语法][11]
+
+[My Photography][12]
 
 [1]:	./2021/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%87%E7%BA%A7%E5%88%B0%20Big%20Sur.md "黑苹果升级到 Big Sur"
 [2]:	./2021/%E8%AF%95%E8%BD%A6.md "试车"
@@ -29,3 +31,4 @@
 [9]:	./2019/%E5%BF%AB%E9%80%9F%E5%88%B6%E4%BD%9CCLOVER%E5%9B%9B%E5%8F%B6%E8%8D%89%E5%BC%95%E5%AF%BCU%E7%9B%98%20WIN+MAC.md
 [10]:	./2019/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%AE%89%E8%A3%85%E5%A4%87%E5%BF%98%E5%BD%95.md "黑苹果安装备忘录"
 [11]:	https://www.markdown.xyz/basic-syntax/ "Markdown 基本语法"
+[12]:	http://heimaphoto.com "my photography"

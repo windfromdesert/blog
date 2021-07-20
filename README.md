@@ -18,7 +18,7 @@
 
 参考：[Markdown 语法][11]  
 
-[1]:	https://github.com/windfromdesert/blog/blob/master/2021/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%87%E7%BA%A7%E5%88%B0%20Big%20Sur.md "黑苹果升级到 Big Sur"
+[1]:	./2021/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%8D%87%E7%BA%A7%E5%88%B0%20Big%20Sur.md "黑苹果升级到 Big Sur"
 [2]:	https://github.com/windfromdesert/blog/blob/master/2021/%E8%AF%95%E8%BD%A6.md "试车"
 [3]:	https://github.com/windfromdesert/blog/blob/master/2020/Arch-%E5%AE%89%E8%A3%85-deb.md
 [4]:	https://github.com/windfromdesert/blog/blob/master/2020/Chrome%E9%85%8D%E5%90%88%E8%B0%B7%E6%AD%8C%E8%AE%BF%E9%97%AE%E5%8A%A9%E6%89%8B%E8%AE%BF%E9%97%AE%E8%B0%B7%E6%AD%8C%E8%B5%84%E6%BA%90.md

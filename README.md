@@ -22,7 +22,7 @@
 
 参考：[Markdown 语法][15]
 
-[My Photography][16]
+[My Photography][16] | [摄影佳作收藏][17]
 
 [1]:	./2021/20210803-%E5%85%B3%E4%BA%8E%E7%BD%91%E7%BB%9C%E6%B8%B8%E6%88%8F.md "未成年人沉迷网络精神鸦片"
 [2]:	./2021/20210803-%E7%96%AB%E6%83%85%E4%B8%8E%E6%9C%BA%E5%99%A8%E4%BA%BA.md "疫情与机器人"
@@ -40,3 +40,4 @@
 [14]:	./2019/%E9%BB%91%E8%8B%B9%E6%9E%9C%E5%AE%89%E8%A3%85%E5%A4%87%E5%BF%98%E5%BD%95.md "黑苹果安装备忘录"
 [15]:	https://www.markdown.xyz/basic-syntax/ "Markdown 基本语法"
 [16]:	http://heimaphoto.com "my photography"
+[17]:	https://bestimage.lofter.com "摄影佳作收藏"

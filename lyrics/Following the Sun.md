@@ -1,6 +1,6 @@
 
-作词 : Negin Djafari/Katy Tizzard/George Tizzard/Rick Parkhouse 
-作曲 : Negin Djafari/Katy Tizzard/George Tizzard/Rick Parkhouse 
+作词 : Negin Djafari/Katy Tizzard/George Tizzard/Rick Parkhouse  
+作曲 : Negin Djafari/Katy Tizzard/George Tizzard/Rick Parkhouse  
 歌手：SUPER-Hi / Neeka
 
 Lyric:

@@ -5,7 +5,8 @@
 
 Lyric:
 
-	`
+
+```
 Maybe I don’t wanna know
 The way home
 taking on a journey, I’ve got places to go
@@ -50,4 +51,4 @@ Following the sun
 Somewhere running up my heart beat
 I don’t look behind me
 Following the sun
-	`
+```

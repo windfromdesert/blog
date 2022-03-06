@@ -359,6 +359,12 @@ thead
 {
     /* padding-left: 10px !important; */
     padding-right: 10px !important;
+	 line-height: 1.5em;  /* * 预览视图的行距 */
+}
+
+.markdown-source-view div
+{
+    line-height: 1.5em; /* 编辑视图的行距  */
 }
 
 /* vertical resize-handle */

@@ -1,5 +1,8 @@
 {
   "baseFontSize": 20,
   "cssTheme": "wb",
-  "theme": "obsidian"
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "11"
+  ]
 }

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "2022/20220305-俄乌战争的根本原因.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#1d2021",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 393.5
   },
   "right": {
     "id": "6e25827222d6c096",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "2022/20220305-俄乌战争的根本原因.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +95,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 429.5
   },
   "active": "7159c0dfa38a6f09",
   "lastOpenFiles": [
-    "README.md",
     "2022/20220305-俄乌战争的根本原因.md",
-    "2022/wb-css obsidian 主题.md",
-    "book/智囊上智部.md",
-    "book/20220222-克拉拉与太阳读书笔记.md",
-    "book/202111-从前我死去的家.md",
     "2022/金融核弹.md",
-    "2022/王阳明之心学.md"
+    "2022/王阳明之心学.md",
+    "单曲循环.md",
+    "2022/wb-css obsidian 主题.md",
+    "book/20220222-克拉拉与太阳读书笔记.md",
+    "照片文字记录/视觉记忆.md",
+    "README.md",
+    "book/智囊上智部.md",
+    "book/202111-从前我死去的家.md"
   ]
 }

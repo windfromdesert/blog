@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022/20220305-俄乌战争的根本原因.md",
+            "file": "2022/重新初始化git分支.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#1d2021",
+                "query": "git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022/20220305-俄乌战争的根本原因.md",
+                "file": "2022/重新初始化git分支.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -91,7 +91,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,15 +100,15 @@
   },
   "active": "7159c0dfa38a6f09",
   "lastOpenFiles": [
+    "2022/重新初始化git分支.md",
+    "2022/wb-css obsidian 主题.md",
     "2022/20220305-俄乌战争的根本原因.md",
     "2022/金融核弹.md",
     "2022/王阳明之心学.md",
     "单曲循环.md",
-    "2022/wb-css obsidian 主题.md",
     "book/20220222-克拉拉与太阳读书笔记.md",
     "照片文字记录/视觉记忆.md",
     "README.md",
-    "book/智囊上智部.md",
-    "book/202111-从前我死去的家.md"
+    "book/智囊上智部.md"
   ]
 }

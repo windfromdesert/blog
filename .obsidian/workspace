@@ -1,0 +1,114 @@
+{
+  "main": {
+    "id": "f5098a9409f6cc9d",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa663abb087b8198",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f1982e5cb65f154c",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "8bd488684c9e364b",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "5b6fe467fd11cc4d",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "11ed9cfa20aa81cd",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "cdea0501e3b1860c",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "3b9fc3c6c038b71f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "ae647593b467f023",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "5f72236161a00135",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "fa663abb087b8198",
+  "lastOpenFiles": [
+    "book/20220308-卡夫卡-变形记-读书笔记.md",
+    "book/20220222-克拉拉与太阳读书笔记.md",
+    "2022/20220305-俄乌战争的根本原因.md",
+    "2015/聪明的投资者.md",
+    "2015/20150120-星巴克咖啡.md"
+  ]
+}

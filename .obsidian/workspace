@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
+            "file": "2022/Git 回滚操作.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
+            "file": "2022/Git 回滚操作.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
+            "file": "2022/Git 回滚操作.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -105,6 +105,8 @@
   },
   "active": "fa663abb087b8198",
   "lastOpenFiles": [
+    "2022/Git 回滚操作.md",
+    "2022/重新初始化git分支.md",
     "book/20220308-卡夫卡-变形记-读书笔记.md",
     "book/20220222-克拉拉与太阳读书笔记.md",
     "2022/20220305-俄乌战争的根本原因.md",

@@ -19,89 +19,105 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f1982e5cb65f154c",
-    "type": "mobile-drawer",
+    "id": "bbd7384f4d24eda9",
+    "type": "split",
     "children": [
       {
-        "id": "8bd488684c9e364b",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "5b6fe467fd11cc4d",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "b3f9b64300261782",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4eb6ba1cb1a1244",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "237283d6addb7693",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6736bd5b6aa1e173",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "11ed9cfa20aa81cd",
-        "type": "leaf",
-        "state": {
-          "type": "tag",
-          "state": {
-            "sortOrder": "frequency",
-            "useHierarchy": true
-          }
-        }
-      },
-      {
-        "id": "cdea0501e3b1860c",
-        "type": "leaf",
-        "state": {
-          "type": "starred",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "3b9fc3c6c038b71f",
-    "type": "mobile-drawer",
+    "id": "ce5f97f76894b999",
+    "type": "split",
     "children": [
       {
-        "id": "ae647593b467f023",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "162b9c8875ba8054",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d268ed5b64649543",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "95a07832d1eb4589",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "21ee2fdaecedc7db",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
           }
-        }
-      },
-      {
-        "id": "5f72236161a00135",
-        "type": "leaf",
-        "state": {
-          "type": "outgoing-link",
-          "state": {
-            "file": "book/20220308-卡夫卡-变形记-读书笔记.md",
-            "linksCollapsed": false,
-            "unlinkedCollapsed": true
-          }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
   "active": "fa663abb087b8198",
   "lastOpenFiles": [

@@ -112,11 +112,11 @@
 }
 
 :root {
-  --default-font: Source Han Serif, -apple-system, BlinkMacSystemFont, Segoe UI,
+  --default-font: Source Han Serif, Source Han Serif SC, -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif, Apple Color Emoji,
     Segoe UI Emoji;
 
-  --editor-font: 'Source Han Serif', 'Hack Nerd Font', 'Source Code Pro',
+  --editor-font: 'Source Han Serif', 'Source Han Serif SC', 'Hack Nerd Font', 'Source Code Pro',
     ui-monospace, SFMono-Regular, SF Mono, Menlo,
     Consolas, Liberation Mono, monospace;
 }
@@ -412,7 +412,7 @@ thead
 .markdown-preview-section h1
 {
     font-weight: 500 !important;
-    font-size: 2.2em !important;
+    font-size: 1.6em !important;
     color: var(--text-title-h1) !important;
 }
 
@@ -420,7 +420,7 @@ thead
 .markdown-preview-section h2
 {
     font-weight: 500 !important;
-    font-size: 2.0em !important;
+    font-size: 1.4em !important;
     color: var(--text-title-h2) !important;
 }
 
@@ -428,7 +428,7 @@ thead
 .markdown-preview-section h3
 {
     font-weight: 500 !important;
-    font-size: 1.8em !important;
+    font-size: 1.2em !important;
     color: var(--text-title-h3) !important;
 }
 
@@ -436,7 +436,7 @@ thead
 .markdown-preview-section h4
 {
     font-weight: 500 !important;
-    font-size: 1.6em !important;
+    font-size: 1.0em !important;
     color: var(--text-title-h4) !important;
 }
 
@@ -444,7 +444,7 @@ thead
 .markdown-preview-section h5
 {
     font-weight: 500 !important;
-    font-size: 1.4em !important;
+    font-size: 1.0em !important;
     color: var(--text-title-h5) !important;
 }
 
@@ -452,7 +452,7 @@ thead
 .markdown-preview-section h6
 {
     font-weight: 500 !important;
-    font-size: 1.2em !important;
+    font-size: 1.0em !important;
     color: var(--text-title-h6) !important;
 }
 

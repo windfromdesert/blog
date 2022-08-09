@@ -295,3 +295,8 @@ rsync参数的具体解释如下：
     --password-file=FILE 从FILE中得到密码
     --bwlimit=KBPS 限制I/O带宽，KBytes per second
     -h, --help 显示帮助信息
+
+常用增量备份命令：
+
+	rsync -ahuvz SRC DEST
+	rsync -ahuv SRC DEST / 其中 z 表示传输时进行压缩处理

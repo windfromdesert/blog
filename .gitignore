@@ -3,12 +3,17 @@
 #   foo.txt
 #   忽略所有生成的  html  文件 ,
 #   *.html
-# foo.html 是手工维护的，所以例外 .
+#   foo.html 是手工维护的，所以例外 .
 #   !foo.html
 #   忽略所有 .o  和  .a 文件 .
 #   *.[oa]
+#   忽略build目录下的所有文件;
+#   build/
+#   只忽略doc/下所有的txt文件,但是不忽略doc/subdir/下的txt文件
+#   doc/*.txt 
 
 *.swp
 .*
 !.gitignore
 *.DS_Store
+.obsidian/

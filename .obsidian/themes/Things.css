@@ -110,11 +110,11 @@ For help and/or CSS snippets, thanks to:
   --strong-color: var(--pink);
   --em-color: var(--pink);
 
-  --font-normal: 16px;
-  --font-small: 13px;
-  --font-smaller: 11px;
-  --font-smallest: 10px;
-  --editor-font-size: 1rem;
+  --font-normal: 22px;
+  --font-small: 16px;
+  --font-smaller: 14px;
+  --font-smallest: 12px;
+  --editor-font-size: 1.05rem;
 
   --h1: 1.5em;
   --h2: 1.3em;

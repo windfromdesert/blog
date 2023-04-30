@@ -1,9 +1,10 @@
 {
   "accentColor": "",
   "baseFontSize": 22,
-  "cssTheme": "wb",
+  "cssTheme": "Things",
   "theme": "obsidian",
   "enabledCssSnippets": [
     "11"
-  ]
+  ],
+  "textFontFamily": ""
 }

@@ -1,0 +1,11 @@
+
+- wifi6: 160MHZ频宽、OFDMA、MU-MIMO
+- 2.5G高速网口
+- 512M大内存
+- 内置散热风扇
+- 1 * 2.5G WAN 以太网口
+- 1 * LAN 以太网口
+- MAX 574Mbps(2.4GHz) / 2402Mbps(5GHz)
+- DDR4 512MB / NAND Flash 256M
+- CPU (MT7981B) dual-core Processor @1.3GHz
+- 106 * 83 * 33 mm / 196g

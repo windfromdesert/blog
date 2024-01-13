@@ -1,3 +1,6 @@
+
+> 这是我在 Dell 笔记本电脑上安装的 [[Archlinux]] 应用软件包记录。
+
 ### 20200308
 
 + Install: focuswriter (AUR)

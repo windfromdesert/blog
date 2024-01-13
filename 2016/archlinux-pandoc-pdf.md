@@ -1,6 +1,6 @@
 ## Archlinux 下安装 Pandoc 与 PDF 转换插件
 
-在 Archlinux 下安装 Pandoc 很简单，直接 `# pacman -S pandoc` 即可。
+在 [[Archlinux]] 下安装 Pandoc 很简单，直接 `# pacman -S pandoc` 即可。
 
 但默认状态下，Pandoc 并不能完成 PDF 的转换。要实现 PDF 的转换还需要安装 texlive-core，可以如下进行安装：
 

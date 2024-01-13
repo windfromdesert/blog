@@ -74,7 +74,7 @@
 
 三、加入第三方驱动/插件
 
-为了更快的安装MAC OS 系统和更好的解决安装黑苹果系统所产生的总是，尽量使用第三方kexts来进行修复安装，本贴提供下载常见的必备kexts方便各果友的使用。
+为了更快的安装MAC OS 系统和更好的解决安装 [[黑苹果]] 系统所产生的总是，尽量使用第三方kexts来进行修复安装，本贴提供下载常见的必备kexts方便各果友的使用。
 
 下载  鼠标键盘等驱动加载 AppleACPIPS2Nub.kext ApplePS2Controller.kext VoodooPS2Controller.kext  NullCPUPowerManagement.kext。复制到制作好的clover四叶草引导U盘，EFI/clover/kexts/10.10和EFI/clover/kexts/10.11下。没有自己新建一个。
 

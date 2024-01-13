@@ -1,4 +1,4 @@
-﻿##  DELL笔记本重新安装archlinux+gnome记录
+##  DELL笔记本重新安装[[Archlinux]]+gnome记录
 
 首先安装 [archlinux][1] ，接下来主要记录安装 Gnome 桌面环境。
 

@@ -1,4 +1,4 @@
-﻿### 使用 debtap 将 deb 安装包转换为 Archlinux 安装包
+### 使用 debtap 将 deb 安装包转换为 [[Archlinux]] 安装包
 
 + 安装 debtap （在AUR库中）
 

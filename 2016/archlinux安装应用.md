@@ -1,4 +1,4 @@
-## Archlinux 我的安装应用
+## [[Archlinux]] 我的安装应用
 
 +   slock
     -   非常简单的屏幕锁定应用，直接 pacman -S slock 安装即可

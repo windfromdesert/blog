@@ -1,6 +1,6 @@
 ### Archlinux 修复 GRUB
 
-1. 使用 Archlinux 安装启动盘进入安装界面。
+1. 使用 [[Archlinux]] 安装启动盘进入安装界面。
 2. 使用如下命令确定 Archlinux 安装在哪个盘。
 
         #lsblk

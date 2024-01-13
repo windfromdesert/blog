@@ -1,4 +1,4 @@
-## Archlinux 中安装 Latex
+## [[Archlinux]] 中安装 Latex
 
 使用最小化安装：
 

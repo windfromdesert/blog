@@ -1,6 +1,6 @@
 ### Git撤销&回滚操作(git reset 和 get revert)
 
-#### Git 的工作流
+#### [[Git]] 的工作流
 
 工作区：在 git add xx 之前，在自己当前分支所修改的代码内容！  
 暂存区：已经 git add xxx 进去，且没有执行 git commit xxx 的。  

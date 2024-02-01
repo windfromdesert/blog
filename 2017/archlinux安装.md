@@ -41,7 +41,7 @@
             -   先查看所有分区：`# lsblk /dev/sdx`
             -   格式化分区：`# mkfs.ext4 /dev/sdxY`
             -   如果分了一个 swap 区，则需要格式化 swap 区：`mkswap /dev/sdaX`,`# swapon /dev/sdaX`
-        +   挂载分区：注意这里不要挂载 swap。必须先挂载 /(root) 分区，其它目录都要在 / 分区中创建，然后再挂载。在安装环境中用 /mnt 目录挂载 root。`# mkdir /mnt/home`,`# mount /dev/sda2 /mnt/home`,`# mkdir -p /mnt/boot`,`# mount /dev/sdxY /mnt/boot`
+        +   挂载分区：注意这里不要挂载 swap。必须先挂载 /(root) 分区，其它目录都要在 / 分区中创建，然后再挂载。在安装环境中用 /mnt 目录挂载 root。`# mount /dev/sdax /mnt`, `# mkdir /mnt/home`,`# mount /dev/sday /mnt/home`,`# mkdir -p /mnt/boot`,`# mount /dev/sdxY /mnt/boot`
     -   选择安装镜像。`# nano /etc/pacman.d/mirrorlist`,安装镜像后请务必使用 `# pacman -Syy` 强制刷新
 +   安装基本系统
     -   使用 pacstrap 命令：`# pacstrap -i /mnt base base-devel`[如果不想手动选择，可能忽略参数 -i，如果想通过 AUR 或者 ABS 编译安装软件包，则需要装上 base-devel]
@@ -64,6 +64,8 @@
         +   使用 `# ip link` 确认网络接口名。
         +   有线网络
         +   无线网络
+	        + 使用 wifi-menu 。安装 dialog, wifi-menu依赖于它:  `# pacman -S dialog`
+	        + 安装并重新启动电脑后，就可以使用 wifi-menu 来连接无线网络了。
     -   wpasswd 设置 Root 密码
     -   安装并配置 grub
         +   `pacman -S grub`
